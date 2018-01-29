@@ -10,7 +10,7 @@ Copy the code below and place it in a Powershell script (.ps1) then copy to the 
 Fill in your information such as sender email, email recipient, sender pass and smtp server form sender.
 (I made an email for the sole purpose of sending these alerts, I would recommend the same. Unless you want a legit email to get backlisted which could happen easily).
 
-p.s I know the password shouldn't be in cleartext, when I get some free time ill fix this.
+P.s I know the password shouldn't be in cleartext, when I get some free time I'll fix this.
 
 ```
 $rdpinfo = Get-WinEvent -LogName Microsoft-Windows-TerminalServices-LocalSessionManager/Operational | Where {$_.Id -eq "25"}| select -ExpandProperty Message -First 1
