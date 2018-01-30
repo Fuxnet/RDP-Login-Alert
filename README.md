@@ -1,4 +1,4 @@
-## PowerShell
+## RDP Login Alert
 
 
 This script sends an automated email alert when a remote user logs into an RDP session. Place the script in the Windows root directory (C:\).
